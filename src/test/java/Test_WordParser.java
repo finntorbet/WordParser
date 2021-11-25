@@ -11,15 +11,14 @@ public class Test_WordParser {
 
     @Test
     public void test_contextualPunctuation() throws WordParserException {
-        assertEquals("Word count = 8\n" +
-                        "Average word length = 3.5\n" +
-                        "Number of words of length 1 is 2\n" +
+        assertEquals("Word count = 6\n" +
+                        "Average word length = 4.5\n" +
                         "Number of words of length 2 is 1\n" +
                         "Number of words of length 3 is 1\n" +
                         "Number of words of length 4 is 1\n" +
                         "Number of words of length 5 is 2\n" +
                         "Number of words of length 8 is 1\n" +
-                        "The most frequently occurring word length is 2, for word lengths of 1 & 5",
+                        "The most frequently occurring word length is 2, for word length of 5",
                 WordParser.parseFile(path + "test.txt"));
     }
 
