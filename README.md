@@ -2,15 +2,15 @@
 A Java Program to take a text file, parse it and output information on the distribution of word lengths.
 
 # Assumptions
-*Avoided the following characters
-**,
-**.
-**;
-**!
-**?
-**Space
+-Avoided the following characters
+--,
+--.
+--;
+--!
+--?
+--Space
 Justification for this was that punctuation wouldn't count towards words (bar those symbols that acted as placeholder for words e.g. &). So only punctuation that could be used in number formatting is permitted.
-*Average is rounded to the third decimal place
+-Average is rounded to the third decimal place
 
 # To Use
 To create the jar from the maven source directory run the two following lines in succession.
