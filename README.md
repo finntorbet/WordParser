@@ -11,3 +11,5 @@ This should compile a jar called WordParser-1.0.jar in the target folder of the 
 ```
 java -jar WordParser-1.0 "URL TO YOUR TXT FILE"
 ```
+
+The result should output directly to the console you are calling the jar from.
