@@ -18,7 +18,7 @@ public class WordParser {
      */
     private static List<String> parse(String content) {
         return new ArrayList<>(Arrays.asList(content.split("[?!\\s.,;]")))
-                //
+                // Remove empty strings which are left behind by '.'
                 .stream().filter(s -> !s.equals("")).collect(Collectors.toList());
     }
 
@@ -63,10 +63,10 @@ public class WordParser {
         for(Integer length : word_lengths.keySet()) {
             int occurrences_of_length = word_lengths.get(length);
             total += length * occurrences_of_length;
-            n += word_lengths.get(length);
+            n += occurrences_of_length;
         }
 
-        // Calculate Average and round to 3 decimal places as shown in the example
+        // Calculate Average and rounds to 3 decimal places as shown in the example
         return Math.round((total / n)*1000d)/1000d; // Average
     }
 
